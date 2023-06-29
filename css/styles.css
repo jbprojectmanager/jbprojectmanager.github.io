@@ -272,7 +272,10 @@ footer {
         display: block;
         
       }
-
+      .container_footer {
+        display: block;
+        justify-content: space-between;
+      }
 
   }
   
