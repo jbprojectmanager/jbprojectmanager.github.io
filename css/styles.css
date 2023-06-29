@@ -255,10 +255,11 @@ footer {
       }
   
     nav ul.menu {
-      /*display: none;*/
-      flex-direction: column;
+      /*display: none;
+      flex-direction: column;*/
       text-align: right;
       font-size: 15px;
+      display:flow-root;
       
     }
     /*nav ul.menu :hover{
@@ -266,6 +267,7 @@ footer {
     }*/
     nav.active ul.menu {
       display: flex;
+      
     }
 
     .servicios-grid {
