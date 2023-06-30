@@ -1,11 +1,13 @@
 #galeria {
     padding: 15px 0;
+    
   }
   
   .slideshow-container {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+   
   }
   
   .slide {
@@ -13,8 +15,10 @@
   }
   
   .slide img {
-    width: 100%;
-    height: auto;
+    display: block;
+    width: auto;
+    height: 450px;
+    margin: auto;
     box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.8);
   }
   
@@ -25,7 +29,7 @@
   
   /* Estilo para agregar transiciones */
   .slide.fade {
-    animation: fade 3s ease-in-out infinite;
+    animation: fade 4s ease-in-out infinite;
   }
   
   @keyframes fade {
