@@ -45,6 +45,7 @@
     /*border-radius: 15px;*/
   }
   .titulo {
+    padding-top: 20px;
     text-align: center;
   }
   .logo img {
@@ -241,13 +242,28 @@ footer {
 }
 
 
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+
+
 
   
   /* Estilos para tablet y smartphone */
   @media only screen and (max-width: 768px) {
-    .hamburger-menu {
-      /*display: block;*/
-    }
+    
     .acerca2-grid {
         display: block;
         /*grid-template-columns: 1fr 1fr;
