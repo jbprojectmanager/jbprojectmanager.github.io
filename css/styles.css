@@ -18,7 +18,7 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
     font-weight:600;
   }
   
@@ -254,7 +254,8 @@
 .popup-content {
   background-color: #fff;
   padding: 10px;
-  max-width: 900px;
+  max-width: 90%;
+  height: 90%;
   text-align: center;
   font-size: 11pt;
   margin: 0 auto;
@@ -268,23 +269,28 @@
 .popup {
   display: none;
   position: fixed;
+  z-index: 9999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 900px;
-  height: auto;
-  background: #353434;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #353434a8;
   color: rgb(0, 0, 0);
-  border: 1px solid #ccc;
-  padding: 5px;
+  border: 1px solid #000000;
+  padding: 20px;
   align-items: center;
-  
+   
+ 
   
 
 }
 .popup h2 {
   text-align: center;
   color: white;
+  background-color: #000000;
+  
 }
 .popup ul {
   text-decoration: none;
@@ -508,4 +514,32 @@ footer {
     text-decoration: none;
   }
   
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
   
+  /* Estilos responsive */
+  @media screen and (max-width: 600px) {
+    .popup-content {
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+  
+  /* Estilos de animación */
+  .popup-content {
+    animation: popup-anim 0.3s ease-in-out;
+  }
+  
+  @keyframes popup-anim {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
