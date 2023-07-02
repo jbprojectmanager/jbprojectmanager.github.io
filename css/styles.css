@@ -21,6 +21,14 @@
     padding: 15px;
     font-weight:600;
   }
+
+  .container-mail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    font-weight:600;
+    background-color: #e2e5d7;
+  }
   
   .container_jb {
     max-width: 800px;
@@ -144,6 +152,7 @@
   width: 80%;
   margin: 0 auto;
   padding: 0;
+  border: #000;
 }
 
 .sin-hiper {
